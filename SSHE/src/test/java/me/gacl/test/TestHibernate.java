@@ -28,9 +28,7 @@ public class TestHibernate {
     }
     
     @Test
-    public void testSaveMethod(){
-        //ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring.xml","spring-hibernate.xml"});
-        //UserServiceI userService = (UserServiceI) ac.getBean("userService");
+    public void testSaveMethod(){    	
         User user = new User();
         user.setId(UUID.randomUUID().toString().replaceAll("-", ""));
         user.setName("孤傲苍狼");

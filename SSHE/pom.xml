@@ -221,12 +221,20 @@
 		</dependency>
 		<!-- mysql驱动包 -->
 
-		<!-- Druid连接池包 -->
+		<!-- dbcp -->
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-			<version>1.0.12</version>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
 		</dependency>
+		<!-- dbcp -->
+
+		<!-- Druid连接池包 -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.alibaba</groupId> -->
+<!-- 			<artifactId>druid</artifactId> -->
+<!-- 			<version>1.0.12</version> -->
+<!-- 		</dependency> -->
 		<!-- Druid连接池包 -->
 
 		<!-- aspectjweaver包 -->
