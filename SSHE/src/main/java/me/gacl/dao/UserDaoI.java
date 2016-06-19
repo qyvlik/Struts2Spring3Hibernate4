@@ -1,20 +1,11 @@
-package me.gacl.service;
+package me.gacl.dao;
 
 import java.io.Serializable;
+
 import me.gacl.model.User;
 
-/**
- * 测试
- * @author gacl
- *
- */
-public interface UserServiceI {
+public interface UserDaoI {
 
-    /**
-     * 测试方法
-     */
-    void test();
-    
     /**
      * 保存用户
      * @param user
