@@ -12,18 +12,33 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-	
+
 	<!-- Spring监听器 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<!-- Spring监听器 -->
-	
+
 	<!-- Spring配置文件位置 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring.xml</param-value>
 	</context-param>
 	<!-- Spring配置文件位置 -->
-	
+
+	<!-- Struts2的核心过滤器配置 -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<!-- Struts2的核心过滤器配置 -->
+
+	<!-- Struts2过滤器拦截所有的.action请求 -->
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	<!-- Struts2过滤器拦截所有的.action请求 -->
+
+
 </web-app>
